@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=Hind+Siliguri:wght@500&family=Karla:wght@400;500&family=Lato&family=Merriweather&family=Noto+Serif+JP:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,400&family=Raleway:ital,wght@1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=Hind+Siliguri:wght@500&family=Karla:wght@400;500&family=Lato&family=Merriweather&family=Noto+Serif+JP:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,400&family=Raleway:ital,wght@1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=Hind+Siliguri:wght@500&family=Karla:wght@400;500&family=Lato&family=Merriweather&family=Noto+Serif+JP:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,400&family=Raleway:ital,wght@1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=Hind+Siliguri:wght@500&family=Karla:wght@400;500&family=Lato&family=Merriweather&family=Noto+Serif+JP:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,400&family=Raleway:ital,wght@1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=Hind+Siliguri:wght@500&family=Karla:wght@400;500&family=Lato&family=Merriweather&family=Noto+Serif+JP:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,400&family=Raleway:ital,wght@1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.logo{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+span{
+    color: rgb(255, 153, 0);
+    text-shadow: 0 0 10px rgb(0,0,0, 0.3);
+}
+ul{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: 0.7s;
+}
+.Home{
+    color: rgb(255, 153, 0);
+}
+a:hover{
+    color: rgb(255, 153, 0);
+}
+.First-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.color{
+    background: linear-gradient(145deg , #000 , rgb(255 , 153 , 0));
+    color: white;
+
+}
+.first-content{
+    font-size: 25px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+}
+img{
+    height: 450px;
+    animation-name: slide;
+    animation-duration: 2s;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    0%{
+        transform: translateY(0px);
+    }
+}
+.title{
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.place1{
+    height: 70px;
+} 
+.place2{
+    height: 400px;
+}
+.image{
+    animation: none;
+}
+.place2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.place3{
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    color: #ffffff;
+}
+.container .card {
+    position: relative;
+    width: 470px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient( 145deg , #000 , rgb(255 , 153 , 0));
+    border-radius: 10px;
+}
+.container .card .image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 200px;
+    transform: translate(-50%);
+    transition: 2s;
+}
+.container .card:hover .image {
+    left: 73%;
+    height: 200px;
+}
+.container .card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px 20px 20px 40px ;
+    transition: 2s;
+    margin-top: 10px;
+}
+.container .card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.container .card .content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+
+}
+.container .card .content p{
+    color: #fff;
+}
+.container .card .content a{
+    color: #111;
+    background: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 1px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-weight: 700;
+    border-radius: 6px;
+}
+.sec-page{
+    margin-top: 100px;
+    height: 500px;
+    background-color: rgb(255 , 153 , 0);
+}
+.sec-content{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.myburger{
+    margin-top: 100px;
+    margin-left: 90%px;
+    height: 350px;
+}
+.cont{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 20px;
+}
+.span{
+    color: #fff;
+}
+ .cont p{
+    color: #000;
+}
+.cont a {
+    background: #000000;
+    padding: 15px 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.chef{
+    animation: none;
+    margin-top: 100px;
+}
+
+.third-page{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ .third-page  h1  {
+    margin-bottom: 20px ;
+    margin-left: 240px;
+    border-left:rgb(255 , 153 , 0) 3px solid;
+    border: width(10%);
+    font-size: 50px;
+}
+.margin{
+    height: 10px;
+    font-size: 20px;
+}
+.place5{
+    border-top: #000 solid 1px ;
+    height: 350px;
+    margin-top: 100px;
+}
